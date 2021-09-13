@@ -1,4 +1,4 @@
-# Docusaurus Netlify CMS Starter
+# Docusaurus Netlify CMS 
 
 This is a starter website built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator, with Netlify CMS enabled.
 
