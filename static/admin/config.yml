@@ -15,7 +15,7 @@ collections:      # collections define the structure for the different content t
     extension: 'md'
     format: 'frontmatter'
     editor:
-      preview: false
+    preview: false
     fields: # saved as front matter at the beginning of the document
       # - name: 'menu'
       #   label: 'Menu'
@@ -37,7 +37,7 @@ collections:      # collections define the structure for the different content t
     extension: 'md'
     format: 'frontmatter'
     editor:
-      preview: false
+    preview: false
     fields:
       - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -63,7 +63,7 @@ collections:      # collections define the structure for the different content t
     extension: 'js'
     format: 'frontmatter'
     editor:
-      preview: false
+    preview: false
     fields:
       - { label: 'Slug', name: 'id', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
