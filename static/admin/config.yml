@@ -1,21 +1,22 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+    repo: fontius/docusaurus-netlify
 media_folder: 'assets/uploads'
-collections:
-  - name: 'docs'
-    label: 'Docs'
+collections:      # collections define the structure for the different content types
+  - name: 'docs'  # Post type identifier, used in routes. Must be unique.
+    label: 'Docs' # What the admin UI calls the post type.
     label_singular: 'Doc'
-    folder: 'docs'
+    folder: 'docs'  # Where files of this type are stored, relative to the repo root
     path: '{{menu}}/{{id}}'
-    create: true
-    slug: '{{id}}'
+    create: true  # Set to true to allow users to create new files in this collection. 
+    slug: '{{id}}' # Filename template, e.g., YYYY-MM-DD-title.md
     identifier_field: 'title'
     extension: 'md'
     format: 'frontmatter'
     editor:
       preview: false
-    fields:
+    fields: # saved as front matter at the beginning of the document
       # - name: 'menu'
       #   label: 'Menu'
       - { label: 'Slug', name: 'id', widget: 'string' }
